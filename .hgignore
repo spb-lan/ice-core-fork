@@ -1,0 +1,15 @@
+syntax: regexp
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+
+^\.idea\/
+^\.git\/
+^\.hg\/
+
+^vendor\/
+^composer.phar$
+
+^.phpunit

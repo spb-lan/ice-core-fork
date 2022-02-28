@@ -1,0 +1,15 @@
+{
+  "name": "spb-lan/ice-core-fork",
+  "description": "Ice Core Module",
+  "license": "BSD-4-Clause",
+  "type": "library",
+  "require": {
+    "psr/container": "1.1.*",
+    "vlucas/phpdotenv": "5.3.*"
+  },
+  "bin": [
+    "bin/ice-exec",
+    "bin/ice-install",
+    "bin/ice-update"
+  ]
+}

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cd $(dirname $(dirname $(dirname $0))) && pwd;
+
+hg summary &&
+hg pull &&
+hg update &&
+hg revert composer.lock &&
+hg revert package-lock.json &&
+hg summary;
+
+php -d memory_limit=-1 /usr/bin/composer install --no-dev --optimize-autoloader --apcu-autoloader && composer dump-autoload --classmap-authoritative
+
+npm install --force;
+
+rm -rf var/cache/*;
+rm -rf var/log/*;
+rm -rf var/run/*;
+rm -rf public/resource/*;
+
+composer show;
+npm ls;
+php -v;

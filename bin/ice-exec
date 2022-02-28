@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $(dirname $(dirname $(dirname $0))) && echo 'directory:' `pwd` && echo 'command:' $*;
+
+docker exec -it -u1000 $(basename $(pwd)) $*

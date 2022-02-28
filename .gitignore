@@ -1,0 +1,14 @@
+# ignore Composer downloads
+/vendor/*
+
+# keep some hiddens
+!.htaccess
+!/.gitignore
+!/.travis.yml
+!/.phpunit
+
+/.idea/*
+/.git/*
+/.hg/*
+
+composer.phar
