@@ -1,6 +1,6 @@
 <?php return [
-    'vendor' => 'ifacesoft',
-    'name' => 'ice-core',
+    'vendor' => 'spb-lan',
+    'name' => 'ice-core-fork',
     'namespace' => 'Ifacesoft\Ice\Core\\',
     'alias' => 'Ic',
     'description' => 'Ice Core Module',
